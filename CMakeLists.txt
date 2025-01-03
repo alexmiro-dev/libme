@@ -11,7 +11,7 @@ set(CMAKE_CXX_SCAN_FOR_MODULES ON)
 
 # Enable compiler modules support for GCC
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    add_compile_options(-fmodules-ts)
+    add_compile_options(-fmodules-ts -fdiagnostics-all-candidates)
 endif()
 
 include(FetchContent)

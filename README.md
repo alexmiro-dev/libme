@@ -1,9 +1,12 @@
 # libme
 
 ## Overview
-An experimental collection of algorithms and data structures inspired by the C++ STL. Designed exclusively for learning and experimentation, not suitable for production environments.
 
-`libme` is a modern C++23 header-only library that implements some STL-like algorithms and data structures. It leverages C++23 modules for better compilation times and cleaner inclusion semantics.
+An experimental collection of algorithms and data structures inspired by the C++ STL. Designed exclusively for learning
+and experimentation, not suitable for production environments.
+
+`libme` is a modern C++23 header-only library that implements some STL-like algorithms and data structures. It leverages
+C++23 modules for better compilation times and cleaner inclusion semantics.
 
 ## Project Structure
 
@@ -24,9 +27,9 @@ libme/
 ### Directory Purposes
 
 - `src/`: Contains all library implementation
-  - `algo/`: Houses algorithm implementations (sorting, searching, etc.)
-  - `ds/`: Contains data structure implementations (circular_buffer, etc.)
-  - `it/`: Implements custom iterators used by the library
+    - `algo/`: Houses algorithm implementations (sorting, searching, etc.)
+    - `ds/`: Contains data structure implementations (circular_buffer, etc.)
+    - `it/`: Implements custom iterators used by the library
 - `examples/`: Demonstrates practical usage of the library components
 - `tests/`: Contains unit tests using Catch2 framework
 
@@ -37,13 +40,17 @@ libme/
 - Catch2 (automatically fetched during build)
 
 ### GCC 14 installation on Ubuntu
+
 #### Add Ubuntu Toolchain repository
+
 ```sudo add-apt-repository ppa:ubuntu-toolchain-r/test```
 
 #### Update package list
+
 ```sudo apt update```
 
 #### Install GCC 14
+
 ```sudo apt install gcc-14 g++-14```
 
 ## Building
@@ -58,6 +65,7 @@ cmake --build .
 ## Running Tests
 
 From the build directory:
+
 ```bash
 ctest
 ```
@@ -65,6 +73,7 @@ ctest
 ## Running Examples
 
 After building, from the build directory:
+
 ```bash
 ./examples/basic_usage
 ```
@@ -95,6 +104,7 @@ target_link_libraries(your_target PRIVATE libme)
 ## Design Philosophy
 
 This library prioritizes:
+
 - Learning and experimentation over performance
 - Modern C++ features and practices
 - Clear implementation over optimization
@@ -103,6 +113,7 @@ This library prioritizes:
 ## Contributing
 
 Feel free to:
+
 - Open issues for bugs or enhancement ideas
 - Submit pull requests with improvements
 - Use the code for learning purposes
@@ -114,4 +125,5 @@ Feel free to:
 
 ## Disclaimer
 
-This library is intended for educational and experimental purposes only. It should not be used in production environments.
+This library is intended for educational and experimental purposes only. It should not be used in production
+environments.
